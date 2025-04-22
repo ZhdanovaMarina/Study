@@ -5,13 +5,13 @@ import java.util.List;
 
 public class NotificationService {
 
-    private final List<> strategies = new ArrayList<>();
+    private final List<NotificationStrategy> strategies = new ArrayList<>();
 
     public void register(NotificationStrategy s){
         strategies.add(s);
     }
 
-    public void notifyAll(String to, String text){
+    public void notifyAllStrategies(String to, String text){
         for (int i = 0; i < strategies.size(); i++) {
             strategies.get(i).send(to, text);
 
