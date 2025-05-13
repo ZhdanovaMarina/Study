@@ -7,7 +7,7 @@ public class HauntedHouse extends Attraction{
     }
 
     @Override
-    void capacity() {
-
+    int capacity() {
+        return 10;
     }
 }

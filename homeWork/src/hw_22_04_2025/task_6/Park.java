@@ -1,13 +1,19 @@
 package hw_22_04_2025.task_6;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Park {
-    List<Attraction> attractions = new ArrayList<>();
+    //    List<Attraction> attractions = new ArrayList<>();
+    private Attraction[] attractions;
 
+    public Park(Attraction[] attractions) {
+        this.attractions = attractions;
+    }
 
-    public void openAll(){
-        attractions.get().ride();
+    public void openAll() {
+        int sum = 0;
+        for (Attraction attraction : attractions) {
+            attraction.ride();
+            sum += attraction.capacity();
+        }
+        System.out.println("Общая пропускная способность: " + sum);
     }
 }

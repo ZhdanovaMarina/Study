@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class MatrixConsole2 {
     public static void main(String[] args) {
 
-//        int[][] matrix = new int[2][2];
+        int[][] matrix = new int[2][2];
 
         Scanner scanner = new Scanner(System.in);
 
@@ -19,7 +19,7 @@ public class MatrixConsole2 {
             switch (number) {
                 case "1":
                     Random random = new Random();
-                    int[][] matrix = newMatrix(scanner);
+                    matrix = newMatrix(scanner);
 
                     for (int i = 0; i < matrix.length; i++) {
                         for (int j = 0; j < matrix.length; j++) {
@@ -50,10 +50,7 @@ public class MatrixConsole2 {
 
                     break;
                 case "4":
-                    if (matrix == null) {
-                        System.out.println("Матрица не может быть пустой");
-                        continue;
-                    }
+
                     int rows = matrix.length;
                     int cols = matrix[0].length;
 
