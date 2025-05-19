@@ -1,4 +1,4 @@
-package projects;
+package projects.StepTracker;
 
 public class MonthData {
     private int[] days = new int[30]; // Массив для хранения данных

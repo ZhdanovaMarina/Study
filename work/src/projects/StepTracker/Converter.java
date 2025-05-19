@@ -1,4 +1,4 @@
-package projects;
+package projects.StepTracker;
 
 public class Converter {
 

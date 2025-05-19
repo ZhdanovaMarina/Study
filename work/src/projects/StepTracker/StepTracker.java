@@ -1,4 +1,4 @@
-package projects;
+package projects.StepTracker;
 
 import java.util.Scanner;
 
