@@ -2,8 +2,8 @@ package hw_18_05_2025.task9;
 
 public class Rectangle {
     private static int counter;
-    private double width;
-    private double height;
+    protected double width;
+    protected double height;
 
     public Rectangle(double width){
         this.width = width;

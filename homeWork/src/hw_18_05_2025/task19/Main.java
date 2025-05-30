@@ -18,5 +18,22 @@ public class Main {
             fruits.get("Красные яблоки");
         }
 
+        System.out.println("========================");
+        for (Map.Entry<String, Integer> entry : fruits.entrySet()){
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+        }
+
+
+        System.out.println("========================");
+        for(Integer value:fruits.values()){
+            System.out.println(value);
+        }
+
+        System.out.println("========================");
+        for(String key:fruits.keySet()){
+            System.out.println(key);
+        }
+
     }
 }
