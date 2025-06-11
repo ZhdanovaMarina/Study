@@ -1,13 +1,15 @@
-package projects.TaskManager;
+package projects.TaskManager.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Epic extends Task{
+public class Epic extends Task {
 
     private Map<Integer, Subtask> children;
+
+
     public Epic(String name, String description) {
         super(name, description);
         this.type = Type.EPIC;

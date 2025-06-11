@@ -1,4 +1,6 @@
-package projects.TaskManager;
+package projects.TaskManager.model;
+
+import projects.TaskManager.util.Identifier;
 
 public class Task {
     protected int id;
@@ -9,7 +11,7 @@ public class Task {
     protected Type type;
 
     public Task(String name, String description) {
-        // TODO реализовать генерацию id
+        this.id = Identifier.INSTANCE.generate();
         this.name = name;
         this.description = description;
         this.status = Status.NEW;
@@ -34,5 +36,20 @@ public class Task {
 
     public Type getType() {
         return type;
+    }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", status=" + status +
+                ", type=" + type +
+                '}';
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
